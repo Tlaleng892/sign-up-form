@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: 'NorseBold';
+  src: url('https://cdn.statically.io/gh/TheOdinProject/curriculum/main/html_css/project-sign-up-form/Norse-Bold.otf');
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* LEFT SIDE */
+.left-side {
+  width: 38%;
+  background-image: url('https://images.unsplash.com/photo-1585200002716-6c9d6d2b9a1e?auto=format&fit=crop&w=900&q=80');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-bar {
+  margin-top: 180px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  gap: 10px;
+}
+
+.logo-bar img {
+  width: 90px;
+}
+
+.logo-bar h1 {
+  font-family: 'NorseBold', Arial, sans-serif;
+  color: white;
+  font-size: 90px;
+  font-weight: normal;
+}
+
+.photo-credit {
+  color: white;
+  font-size: 13px;
+  text-align: center;
+  padding: 15px;
+}
+
+.photo-credit a {
+  color: white;
+}
+
+/* RIGHT SIDE */
+.right-side {
+  width: 62%;
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-text {
+  padding: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.4;
+  max-width: 700px;
+}
+
+.top-text p + p {
+  margin-top: 25px;
+}
+
+.form-box {
+  background-color: white;
+  padding: 25px 40px 35px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 60px;
+  max-width: 600px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.field input {
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+  outline: none;
+}
+
+.field input:focus {
+  border: 1px solid blue;
+  box-shadow: 0 0 5px rgba(0,0,255,0.3);
+}
+
+.field input:user-invalid {
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+
+.error.show {
+  display: block;
+}
+
+.create-btn {
+  background-color: #596D48;
+  color: white;
+  border: none;
+  padding: 14px 45px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 30px 40px 0;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.create-btn:hover {
+  background-color: #4a5a3c;
+}
+
+.login-text {
+  margin: 30px 40px;
+  font-size: 16px;
+}
+
+.login-text a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
